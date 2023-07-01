@@ -1,5 +1,0 @@
---[[
--- Files Viewer Script.
--- Made by @altlexon.
--- Roblox-TS & Roact.
---]]
