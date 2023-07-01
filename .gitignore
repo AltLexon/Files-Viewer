@@ -6,3 +6,4 @@
 # Hide not important stuff
 ci
 dist/main.lua
+dist/main.rbxm
