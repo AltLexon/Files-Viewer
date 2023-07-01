@@ -13,7 +13,7 @@ local function runModule(object, context)
 		currentObject = currentlyLoading[currentObject]
 
 		if currentObject == object then
-			local str = currentObject.Name
+			local str = currentObject.Name -- Get the string traceback
 
 			for _ = 1, depth do
 				currentObject = currentlyLoading[currentObject]
@@ -27,7 +27,7 @@ local function runModule(object, context)
 	local module = modules[object]
 	local data = module.callback()
 
-	if currentlyLoading[context] == object then
+	if currentlyLoading[context] == object then -- Thread-safe cleanup!
 		currentlyLoading[context] = nil
 	end
 

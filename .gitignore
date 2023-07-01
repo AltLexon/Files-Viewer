@@ -1,8 +1,5 @@
+/ci
 /node_modules
 /out
 /include
 *.tsbuildinfo
-/.vscode
-/ci
-/dist
-/include
