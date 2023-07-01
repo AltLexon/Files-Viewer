@@ -13,4 +13,4 @@ end
 
 <br>
 
-Script made by [altlexon](discord://discordapp.com/users/923286783691718676)
+Script made by [altlexon](https://discordapp.com/users/923286783691718676)
