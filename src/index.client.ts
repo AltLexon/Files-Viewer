@@ -8,6 +8,8 @@ const UI_Name = 'Files-Viewer'
 getgenv()['Files-Viewer'] = {}
 const Files_Viewer_Table = getgenv()['Files-Viewer'] as Map<any, any>
 
+const Keybind: Enum.KeyCode = getgenv().ToggleKey as Enum.KeyCode
+
 Files_Viewer_Table.set('_ Selected', undefined)
 
 const LocalPlayer = Players.LocalPlayer as Player
@@ -30,7 +32,7 @@ UserInputService.InputBegan.Connect((int: InputObject, gameProcessedEvent: boole
         return
     }
 
-    if (int.KeyCode === Enum.KeyCode.K && !isMoving) {
+    if (int.KeyCode === Keybind && !isMoving) {
         if (isOpen) {
             motor.setGoal(new Spring(1.5, {frequency: 2.5, dampingRatio: 0.5}))
         } else {

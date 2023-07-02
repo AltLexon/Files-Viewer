@@ -8,6 +8,8 @@
 --      Maybe things does not work.
 --]]
 
+getgenv().ToggleKey = Enum.KeyCode.K
+
 local Link = 'https://raw.githubusercontent.com/AltLexon/Files-Viewer/master/dist/main-dev.lua'
 local success, err = loadstring(game:HttpGetAsync(Link))()
 
