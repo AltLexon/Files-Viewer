@@ -11,11 +11,7 @@
 getgenv().ToggleKey = Enum.KeyCode.K
 
 local Link = 'https://raw.githubusercontent.com/AltLexon/Files-Viewer/master/dist/main-dev.lua'
-local success, err = loadstring(game:HttpGetAsync(Link))()
-
-if not success then
-    return print('Error:', err)
-end
+loadstring(game:HttpGetAsync(Link))()
 ```
 
 <br>
